@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+message Message {
+	string key  = 1;
+	string content = 2;
+}
+
+message Comment {
+	string key  = 1;
+	string msgId = 2;
+	string content = 3;
+}
+
+message NoneObject {
+}
+
+message ResponseObject {
+	uint32 err = 1;
+	string msg = 2;
+}
+
